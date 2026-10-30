@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Portfolio | Business Analytics Student, Deakin University</title>
+<meta name="description" content="Final-year Business Analytics student at Deakin University seeking internship or part-time roles in business analysis and business information.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Mrs+Saint+Delafield&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{color-scheme:light;--bg:#d8ccc8;--bg2:#bcadaa;--burg:#5a1323;--paper:#f6efea;--tan:#d8ad8c;--choc:#3a1f18;--ink:#2b2323;--charc:#4b4342;--ph:#f1dfae;--phink:#5c4410;
+--fg:var(--ink);--accent:#5a1323;--line:rgba(58,31,24,.3);--cardbg:#fff;--slot:rgba(255,255,255,.4);
+--disp:"Bebas Neue","Oswald",Impact,sans-serif;--script:"Mrs Saint Delafield","Brush Script MT",cursive;--sans:"Montserrat",system-ui,-apple-system,"Segoe UI",sans-serif;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+*{box-sizing:border-box}
+body{margin:0;background:linear-gradient(170deg,var(--bg),var(--bg2));background-attachment:fixed;color:var(--ink);font:16px/1.7 var(--sans)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:10}
+.w{max-width:1160px;margin:0 auto;padding:0 22px}
+.ph{background:var(--ph);color:var(--phink);padding:0 4px}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:var(--bg);border-bottom:1px solid var(--line)}
+nav .w{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-top:14px;padding-bottom:14px}
+.logo{font:400 1.7rem var(--disp);letter-spacing:.06em;color:var(--ink);text-decoration:none}
+.menu{display:flex;flex-wrap:wrap;gap:4px 28px;font-size:.78rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase}
+.menu a{color:var(--ink);text-decoration:none}.menu a:hover{color:var(--accent)}
+.btn{background:var(--burg);color:#fff;border-radius:999px;padding:8px 20px;font-size:.74rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;text-decoration:none}
+.strip{display:flex;justify-content:space-between;gap:12px;font-size:.76rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--ink);padding-top:26px}
+.hero{position:relative;margin:18px 0 0;padding-bottom:clamp(1.8rem,6vw,4.5rem)}
+.name{font:400 clamp(4rem,19vw,15rem)/.86 var(--disp);letter-spacing:.01em;text-transform:uppercase;color:var(--charc);margin:0}
+.script{position:absolute;left:3%;top:24%;font:400 clamp(3.4rem,12vw,9rem)/1 var(--script);color:var(--burg);transform:rotate(-5deg);pointer-events:none;text-shadow:0 0 18px var(--bg)}
+.stmt{position:relative;z-index:2;font:600 clamp(1.1rem,2.2vw,1.5rem)/1.4 var(--sans);color:var(--ink);max-width:34ch;margin:0 0 34px}
+.intro{display:grid;grid-template-columns:.8fr 1.2fr;gap:44px;align-items:start;background:var(--choc);color:#f3e6dc;padding:34px;margin-bottom:26px;border-radius:22px;--accent:#e6bd9f;--line:rgba(230,189,159,.3);--slot:rgba(255,255,255,.1)}
+.intro p{margin:0 0 14px;max-width:58ch}
+.slot{border-radius:16px;position:relative;background:var(--slot);border:1px solid var(--line);display:flex;align-items:center;justify-content:center;text-align:center;font-size:.78rem;color:inherit;opacity:.95;padding:12px;overflow:hidden}
+.slot img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.portrait{aspect-ratio:4/5}
+.gtk{position:absolute;right:10px;bottom:2px;font:400 2.6rem/1 var(--script);color:#fff;font-style:normal;text-shadow:0 1px 8px rgba(0,0,0,.6);z-index:2}
+.facts{display:grid;grid-template-columns:110px 1fr;gap:8px 16px;border-top:1px solid var(--line);padding-top:16px;margin-top:20px;font-size:.92rem}
+.facts b,.rows b{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);font-weight:600;padding-top:3px}
+section.s{--fg:var(--ink);--accent:var(--burg);--line:rgba(58,31,24,.28);--cardbg:#fff;--slot:rgba(58,31,24,.07);background:var(--paper);color:var(--fg);padding:38px 34px 30px;margin:0 0 26px;border-radius:22px}
+section.s.rose{background:var(--burg);--fg:#f6ecea;--accent:#efc7ad;--line:rgba(239,199,173,.35);--cardbg:rgba(255,255,255,.08);--slot:rgba(255,255,255,.1)}
+section.s.dark{background:var(--choc);--fg:#f3e6dc;--accent:#e6bd9f;--line:rgba(230,189,159,.3);--cardbg:rgba(255,255,255,.07);--slot:rgba(255,255,255,.08)}
+section.s.tan{background:var(--tan);--fg:#2a140f;--accent:var(--burg);--line:rgba(42,20,15,.28);--cardbg:rgba(255,255,255,.4);--slot:rgba(255,255,255,.3)}
+.chead{display:flex;justify-content:space-between;font-size:.74rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);border-bottom:1px solid var(--line);padding-bottom:10px;margin-bottom:22px}
+.kick{font:400 2.4rem/1 var(--script);color:var(--accent);margin:0}
+.h2{font:400 clamp(3rem,9vw,6.2rem)/.95 var(--disp);letter-spacing:.01em;text-transform:uppercase;margin:0 0 26px;color:inherit}
+.txt p{max-width:62ch;margin:0 0 14px}
+.pull{font:600 clamp(1.1rem,2.4vw,1.5rem)/1.4 var(--sans);color:var(--accent);max-width:40ch;margin:24px 0 0}
+.proj{display:grid;grid-template-columns:1.05fr 1fr;gap:40px;padding:36px 0;border-top:1px solid var(--line)}
+.main{aspect-ratio:16/10}
+.thumbs{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:8px}
+.thumbs .slot{aspect-ratio:16/10;cursor:pointer;padding:2px;font-size:.6rem}
+.cat{font-size:.74rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--accent)}
+.proj h3{font:400 clamp(2.6rem,6vw,4rem)/.95 var(--disp);letter-spacing:.01em;text-transform:uppercase;margin:6px 0 2px}
+.sub{font:400 2rem/1 var(--script);color:var(--accent);margin:0 0 12px}
+.pill{display:inline-block;border:1.5px solid var(--accent);border-radius:999px;padding:2px 14px;font-size:.7rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:14px}
+.desc{margin:0 0 6px;font-size:.96rem}
+.rows>div{display:grid;grid-template-columns:84px 1fr;gap:14px;border-top:1px solid var(--line);padding:11px 0;font-size:.92rem;line-height:1.6}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+.tags span{border:1px solid var(--line);border-radius:999px;padding:2px 13px;font-size:.78rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}
+.card{background:var(--cardbg);border:1px solid var(--line);border-radius:16px;padding:22px}
+.card h3{font:400 1.9rem/1 var(--disp);letter-spacing:.02em;text-transform:uppercase;margin:0 0 8px}
+.card p{margin:0;font-size:.94rem;line-height:1.6}
+.card h4{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);margin:0 0 6px;font-weight:600}
+.vol{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
+.vol .slot{aspect-ratio:4/3}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:44px}
+.sh{font:400 clamp(2rem,4.5vw,3rem)/1 var(--disp);letter-spacing:.01em;text-transform:uppercase;margin:0 0 14px;color:var(--accent)}
+@media (max-width:860px){.two{grid-template-columns:1fr;gap:10px}}
+.certs{display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:8px;scrollbar-width:none}.certs::-webkit-scrollbar{display:none}
+.cert{flex:0 0 calc((100% - 36px)/3);min-width:260px;scroll-snap-align:start;background:var(--cardbg);border:1px solid var(--line);border-radius:16px;overflow:hidden;display:flex;flex-direction:column}
+.cimg{aspect-ratio:4/3;border-radius:0;border:0;border-bottom:1px solid var(--line)}
+.verify{position:absolute;left:12px;top:12px;z-index:2;background:var(--burg);color:#fff;border-radius:999px;padding:5px 16px;font-size:.72rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;text-decoration:none}
+.cbody{padding:20px;display:flex;flex-direction:column;gap:4px;flex:1}
+.cbody h3{font:400 1.8rem/1.05 var(--disp);letter-spacing:.01em;text-transform:uppercase;margin:0 0 4px}
+.who{display:inline-block;align-self:flex-start;border:1.5px solid var(--accent);border-radius:999px;padding:2px 14px;font-weight:600;font-size:.8rem;letter-spacing:.04em;color:var(--accent);margin:0 0 4px}.edu-soon{grid-template-columns:1fr}.det{margin:0}
+.date{margin:auto 0 0;padding-top:18px;color:#6b5a55;font-size:.88rem}
+.cbar{height:6px;background:rgba(58,31,24,.15);margin-top:18px;border-radius:3px;overflow:hidden}.cbar i{display:block;height:100%;width:40%;background:var(--burg);border-radius:3px}
+.arrows{display:flex;gap:12px;justify-content:flex-end;margin:-70px 0 26px}.arrows button{width:48px;height:48px;border-radius:50%;border:1.5px solid var(--accent);background:none;color:var(--accent);font-size:1.3rem;cursor:pointer}.arrows button:hover{background:var(--accent);color:#fff}
+@media (max-width:860px){.cert{flex-basis:82%}.arrows{margin:0 0 16px}}
+.edu{display:grid;grid-template-columns:minmax(240px,380px) 1fr;background:var(--cardbg);border:1px solid var(--line);border-radius:16px;overflow:hidden}
+.edu .cimg{height:100%;min-height:240px;aspect-ratio:auto;border-bottom:0;border-right:1px solid var(--line)}
+.ebody{padding:26px;display:flex;flex-direction:column;gap:4px}
+.ebody h3{font:400 2.2rem/1.05 var(--disp);letter-spacing:.01em;text-transform:uppercase;margin:0 0 4px}
+.ebody .det{margin:0}.ebody .date{margin-top:14px;padding-top:0}
+.rowhead{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;margin:44px 0 18px}.rowhead .sh{margin:0}.rowhead .arrows{margin:0}
+@media (max-width:860px){.edu{grid-template-columns:1fr}.edu .cimg{border-right:0;border-bottom:1px solid var(--line);aspect-ratio:4/3;min-height:0}.rowhead .arrows{margin:0}}
+footer{padding:30px 0 50px;color:var(--ink);font-size:.82rem}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+@media (max-width:860px){.menu{display:none}.intro,.proj,.vol{grid-template-columns:1fr;gap:26px}.portrait{max-width:320px}.strip span:nth-child(2){display:none}.script{top:28%}section.s,.intro{padding:26px 20px}}
+</style>
+</head>
+<body>
+
+<nav><div class="w">
+<a class="logo" href="#top"><span class="ph">Your Name</span></a>
+<div class="menu"><a href="#about">Story</a><a href="#work">Work</a><a href="#mentor">Mentoring</a><a href="#toolkit">Toolkit</a><a href="#credentials">Credentials</a><a href="#contact">Contact</a></div>
+<!-- RESUME: upload your CV to GitHub as resume.pdf -->
+<a class="btn" href="resume.pdf">Resume ↓</a>
+</div></nav>
+
+<header id="top" class="w">
+<div class="strip"><span>Portfolio · 2026</span><span>Melbourne ↔ Ho Chi Minh City</span><span>trinhdng.github.io</span></div>
+<div class="hero"><h1 class="name"><span class="ph">Your Name</span></h1><span class="script">portfolio</span></div>
+<p class="stmt">Raised around business, learning to turn data into decisions.</p>
+<div class="intro" id="story">
+<!-- PHOTO: upload your photo to GitHub named photo.jpg (same place as index.html) -->
+<div class="slot portrait"><span>Photo: photo.jpg</span><img src="photo.jpg" alt="Portrait" onerror="this.style.display='none'"><em class="gtk">get to know me</em></div>
+<div>
+<h2 class="h2" style="margin-bottom:14px">Who am I</h2>
+<p>Final-year Business Analytics student at Deakin University, Melbourne, and a volunteer in the university’s Business Peer Mentoring program. I’m always eager to learn, I bring energy to everything I take on, and I treat every opportunity seriously. I’m now looking for an internship or part-time role where I can turn data into decisions.</p>
+<p>I’m curious about how businesses run, how decisions get made, and where evidence can reveal an opportunity nobody has spotted yet.</p>
+<div class="facts">
+<b>Studying</b><span>Business Analytics, Deakin University (final year)</span>
+<b>Looking for</b><span>Internship or part-time roles in business analysis and business information</span>
+<b>Based in</b><span>Melbourne</span>
+</div>
+</div>
+</div>
+</header>
+
+<main class="w">
+
+<section class="s" id="about">
+<div class="chead"><span>About me</span><span>My story</span><span>00</span></div>
+<p class="kick">where it began,</p>
+<h2 class="h2">My story</h2>
+<div class="two">
+<div class="txt">
+<p>I grew up around business in Ho Chi Minh City, one of Vietnam’s major economic hubs. My family has generations of business experience, so questions like how a business operates, how decisions are made and how opportunities are created were part of life long before I studied them. That curiosity shaped how I see the world, and it planted a wish to build something meaningful of my own.</p>
+<p>In 2022, at 16, I moved to Australia to continue my education. It wasn’t easy, for me or for my family. I had to adapt to a new environment, become independent quickly and work through unfamiliar situations far from home. Over time Australia became my second home, and the experience made me more open-minded, adaptable and understanding of different perspectives.</p>
+<p>My parents are a big reason I keep growing. They never placed heavy expectations on me or demanded a particular kind of success; they gave me the freedom to find my own path. That trust became my strongest motivation. I want to keep learning and become someone they can be proud of, not because I have to, but because I genuinely want to.</p>
+<p class="pull">My family shaped my interest in business. Studying abroad shaped the person I am becoming.</p>
+</div>
+<div class="txt">
+<h3 class="sh">Why business analytics</h3>
+<p>Business Analytics lets me combine business understanding, technology and problem-solving. What I enjoy most is taking a complex problem apart, understanding why it happens and finding where it can be improved. Data can reveal patterns that aren’t obvious at first, so decisions can rest on evidence instead of assumptions.</p>
+<p>I’m also drawn to the people behind the numbers. Behind every dataset is a customer’s behaviour, a business challenge or a chance to create a better experience. I want to understand those different perspectives, talk with stakeholders and turn business needs into practical solutions.</p>
+<p>To me, analytics is about asking the right questions, seeing the bigger picture and using evidence to make better decisions.</p>
+</div>
+</div>
+</section>
+
+<section class="s" id="work">
+<div class="chead"><span>The work</span><span>Selected projects</span><span>01</span></div>
+<p class="kick">what I’ve built,</p>
+<h2 class="h2">Projects</h2>
+<!-- To add dashboard screenshots: upload images to GitHub with these names (altano-1.jpg ... altano-4.jpg). Click a small thumbnail to swap the big image. -->
+
+<article class="proj">
+<div class="gal">
+<div class="slot main"><span>Add screenshot: altano-1.jpg</span><img src="altano-1.jpg" alt="Altano Bank Power BI dashboard" onerror="this.style.display='none'"></div>
+<div class="thumbs"><div class="slot"><span>altano-1</span><img src="altano-1.jpg" alt="" onerror="this.style.display='none'"></div><div class="slot"><span>altano-2</span><img src="altano-2.jpg" alt="" onerror="this.style.display='none'"></div><div class="slot"><span>altano-3</span><img src="altano-3.jpg" alt="" onerror="this.style.display='none'"></div><div class="slot"><span>altano-4</span><img src="altano-4.jpg" alt="" onerror="this.style.display='none'"></div></div>
+</div>
+<div>
+<div class="cat">Business intelligence · Group of 3</div>
+<h3>Altano Bank</h3><p class="sub">Power BI dashboards</p>
+<span class="pill">✓ Completed</span>
+<p class="desc">An 8-page Power BI report for a fictional bank’s board, managers and daily users, built on a cleaned single source of truth.</p>
+<div class="rows">
+<div><b>Role</b><span>Team leader in a group of 3. <span class="ph">Optional: add what you led or built</span></span></div>
+<div><b>Did</b><span>Cleaned 93,181 transactions across 2,321 cards in Power Query, modelled the data, and designed pages with slicers, drill-through and navigation.</span></div>
+<div><b>Found</b><span>Spend was only about 43% of the $10M monthly target, and 13.7% of cards had no brand, which made market-share figures unreliable.</span></div>
+</div>
+<div class="tags"><span>Power BI</span><span>Power Query</span><span>DAX</span><span>Data cleansing</span></div>
+</div>
+</article>
+
+<article class="proj">
+<div>
+<div class="cat">Text analytics · Individual</div>
+<h3>Airbnb Victoria</h3><p class="sub">Guest review analysis</p>
+<span class="pill">✓ Completed</span>
+<p class="desc">What guests praise and complain about across Victorian neighbourhoods and room types.</p>
+<div class="rows">
+<div><b>Role</b><span>Solo analyst: data prep, modelling, charts and written recommendations.</span></div>
+<div><b>Did</b><span>Scored review sentiment with VADER across the 10 most-reviewed neighbourhoods, measured complaint themes, and used LDA topic modelling to compare room types.</span></div>
+<div><b>Found</b><span>Yarra Ranges guests were happiest (0.86) and Monash the least (0.69). Amenities drew the most complaints. Hosts should audit cleanliness in weaker areas and coach by room type.</span></div>
+</div>
+<div class="tags"><span>Python</span><span>VADER</span><span>LDA</span><span>Google Colab</span></div>
+</div>
+<div class="gal">
+<div class="slot main"><span>Add screenshot: airbnb-1.jpg</span><img src="airbnb-1.jpg" alt="Airbnb sentiment chart" onerror="this.style.display='none'"></div>
+</div>
+</article>
+
+
+<article class="proj"><div class="gal">
+<div class="slot main"><span>Add screenshot: portfolio-1.jpg</span><img src="portfolio-1.jpg" alt="Portfolio optimisation results" onerror="this.style.display='none'"></div>
+</div>
+<div>
+<div class="cat">Optimisation · Individual</div>
+<h3>ASX Portfolio</h3><p class="sub">LP, ILP and NLP models</p>
+<span class="pill">✓ Completed</span>
+<p class="desc">Recommending a diversified portfolio across Health Care, Financials and Information Technology.</p>
+<div class="rows">
+<div><b>Role</b><span>Solo: stock selection, risk grouping, modelling and client recommendation.</span></div>
+<div><b>Did</b><span>Calculated 48 months of returns and risk for nine stocks, then built linear, integer and Sharpe-ratio models in Excel Solver.</span></div>
+<div><b>Found</b><span>The best linear model held just two stocks. A six-stock integer portfolio gave up only 0.18 points of monthly return and expects 1.46% a month.</span></div>
+</div>
+<div class="tags"><span>Excel Solver</span><span>Optimisation</span><span>Sensitivity analysis</span></div>
+</div>
+</article>
+
+<article class="proj"><div>
+<div class="cat">Agile delivery · Team project</div>
+<h3>Blueberry Festival</h3><p class="sub">Mobile app prototype</p>
+<span class="pill">✓ Completed</span>
+<p class="desc">An app concept for a Warrnambool music festival: activity locations and times, ticketing, notifications and sign-ups.</p>
+<div class="rows">
+<div><b>Role</b><span>Rotated between Scrum Master, Product Owner and team member across the sprints.</span></div>
+<div><b>Did</b><span>Worked in five Agile sprints using Jira and Miro: user stories with story points, MVP goals, stand-ups, retrospectives and burndown charts, ending in a project plan report and presentation.</span></div>
+<div><b>Result</b><span><span class="ph">Add one real outcome, for example what the client or tutor said, or what you delivered.</span></span></div>
+</div>
+<div class="tags"><span>Agile</span><span>Jira</span><span>Miro</span><span>User stories</span></div>
+</div>
+<div class="gal">
+<div class="slot main"><span>Add Miro screenshot: blueberry-1.jpg</span><img src="blueberry-1.jpg" alt="Blueberry Festival app prototype" onerror="this.style.display='none'"></div>
+<div class="thumbs"><div class="slot"><span>blueberry-1</span><img src="blueberry-1.jpg" alt="" onerror="this.style.display='none'"></div><div class="slot"><span>blueberry-2</span><img src="blueberry-2.jpg" alt="" onerror="this.style.display='none'"></div><div class="slot"><span>blueberry-3</span><img src="blueberry-3.jpg" alt="" onerror="this.style.display='none'"></div><div class="slot"><span>blueberry-4</span><img src="blueberry-4.jpg" alt="" onerror="this.style.display='none'"></div></div>
+</div>
+</article>
+</section>
+
+<section class="s rose" id="mentor">
+<div class="chead"><span>Giving back</span><span>Volunteering</span><span>02</span></div>
+<p class="kick">beyond the classroom,</p>
+<h2 class="h2">Peer mentoring</h2>
+<div class="vol">
+<div class="txt">
+<p><b>Volunteer, Business Peer Mentoring Program, Deakin University</b> · October 2026 to present</p>
+<p>I support new students as they settle in. As an international student at Deakin, I know how hard it can be to get used to a new environment, make friends and work through obstacles. In Deakin’s faculty peer mentoring model, new students are matched with an experienced student in the same or a similar course for their first five weeks of trimester. Mentors answer questions, share tips and connect mentees with campus services.</p>
+<p>The program builds leadership, communication and teamwork skills, and it lets me use my own experience of moving abroad to help someone else feel at home.</p>
+</div>
+<!-- PHOTO: upload as mentoring.jpg -->
+<div class="slot"><span>Photo: mentoring.jpg</span><img src="mentoring.jpg" alt="Peer mentoring" onerror="this.style.display='none'"></div>
+</div>
+</section>
+
+<section class="s tan" id="toolkit">
+<div class="chead"><span>How I work</span><span>Toolkit</span><span>03</span></div>
+<div class="grid">
+<div class="card"><h4>Analytics and BI</h4><p>Power BI, Power Query, DAX, dashboard design, data cleansing</p></div>
+<div class="card"><h4>Modelling</h4><p>Excel Solver, Monte Carlo simulation, optimisation, sensitivity analysis</p></div>
+<div class="card"><h4>Python and AI</h4><p>pandas, VADER, LDA, scikit-learn, TensorFlow/Keras</p></div>
+<div class="card"><h4>Delivery</h4><p>Agile, Jira, Miro, user stories, stakeholder-ready reporting</p></div>
+<div class="card"><h4>Strengths</h4><p>Creative thinking, listening, logical problem-solving, adapting to change, initiative, attention to detail, learning independently, organising, teamwork</p></div>
+</div>
+</section>
+
+<section class="s" id="credentials">
+<div class="chead"><span>The paper trail</span><span>Degrees and certificates</span><span>04</span></div>
+<p class="kick">the paper trail,</p>
+<h2 class="h2">Qualifications</h2>
+<h3 class="sh">Education</h3>
+<article class="edu edu-soon"><div class="ebody"><h3>Business Analytics</h3><p class="who">Deakin University</p><p class="det">Final-year student. Degree certificate to be added after graduation.</p></div></article>
+<!-- AFTER YOU GRADUATE: delete the card above and un-hide this one by removing the comment markers around it.
+<article class="edu">
+<div class="slot cimg"><span>Degree certificate image: cert-degree.jpg</span><img src="cert-degree.jpg" alt="" onerror="this.style.display='none'"></div>
+<div class="ebody">
+<h3><span class="ph">Official degree name</span></h3>
+<p class="who">Deakin University</p>
+<p class="det"><b>Major or specialisation:</b> <span class="ph">e.g. your major, if any</span></p>
+<p class="det"><b>Result or honours:</b> <span class="ph">optional, e.g. WAM or distinction</span></p>
+<p class="det"><b>Relevant units:</b> business intelligence, decision analytics, AI for business, Agile project management</p>
+<p class="date">Expected graduation: <span class="ph">month year</span></p>
+</div>
+</article>
+END OF GRADUATION CARD -->
+<div class="rowhead"><h3 class="sh">Certificates</h3><div class="arrows"><button id="cprev" aria-label="Previous">←</button><button id="cnext" aria-label="Next">→</button></div></div>
+<!-- PEER MENTORING CERTIFICATE: put it in the first card. HOW TO FILL A CARD: 1) replace each yellow text; 2) upload a photo or screenshot of the certificate with the file name shown (cert-degree.jpg, cert-1.jpg ...); 3) paste the certificate verify link after href= inside each Verify button, or delete the whole <a class="verify"> line if there is no link. To add a card, copy a whole <article class="cert"> block. -->
+<div class="certs" id="certs">
+<article class="cert">
+<div class="slot cimg"><a class="verify" href="https://PASTE-VERIFY-LINK-HERE" target="_blank" rel="noopener">Verify ↗</a><span>Certificate image: cert-1.jpg</span><img src="cert-1.jpg" alt="" onerror="this.style.display='none'"></div>
+<div class="cbody"><h3><span class="ph">Course or certificate name</span></h3><p class="who"><span class="ph">Issuer, e.g. Coursera × Google, LinkedIn Learning</span></p><p class="det"><span class="ph">Key skills covered or grade (optional)</span></p><p class="date"><span class="ph">Month year, or In progress</span></p></div>
+</article>
+<article class="cert">
+<div class="slot cimg"><a class="verify" href="https://PASTE-VERIFY-LINK-HERE" target="_blank" rel="noopener">Verify ↗</a><span>Certificate image: cert-2.jpg</span><img src="cert-2.jpg" alt="" onerror="this.style.display='none'"></div>
+<div class="cbody"><h3><span class="ph">Course or certificate name</span></h3><p class="who"><span class="ph">Issuer, e.g. Coursera × Google, LinkedIn Learning</span></p><p class="det"><span class="ph">Key skills covered or grade (optional)</span></p><p class="date"><span class="ph">Month year, or In progress</span></p></div>
+</article>
+<article class="cert">
+<div class="slot cimg"><a class="verify" href="https://PASTE-VERIFY-LINK-HERE" target="_blank" rel="noopener">Verify ↗</a><span>Certificate image: cert-3.jpg</span><img src="cert-3.jpg" alt="" onerror="this.style.display='none'"></div>
+<div class="cbody"><h3><span class="ph">Course or certificate name</span></h3><p class="who"><span class="ph">Issuer, e.g. Coursera × Google, LinkedIn Learning</span></p><p class="det"><span class="ph">Key skills covered or grade (optional)</span></p><p class="date"><span class="ph">Month year, or In progress</span></p></div>
+</article>
+</div>
+<div class="cbar"><i id="cbar"></i></div>
+</section>
+
+<section class="s dark" id="why">
+<div class="chead"><span>The case for me</span><span>Why hire me</span><span>05</span></div>
+<p class="kick">what I bring,</p>
+<h2 class="h2">Why hire me</h2>
+<div class="grid">
+<div class="card"><h3>I break problems down</h3><p>On Altano I audited three datasets and fixed quality issues before drawing conclusions. On the ASX portfolio project I compared linear, integer and nonlinear models before recommending one.</p></div>
+<div class="card"><h3>I listen to people</h3><p>Whether I’m analysing what Airbnb guests wrote or supporting new students as a peer mentor, I start by understanding what people actually need.</p></div>
+<div class="card"><h3>I adapt and keep learning</h3><p>Moving to Australia at 16 taught me to adapt and work independently. I pick up the tools each project needs, from Power BI to Python to Excel Solver.</p></div>
+<div class="card"><h3>I work well in a team</h3><p>A group Power BI report and Agile sprints on the Blueberry app taught me to organise tasks, share the work and deliver together.</p></div>
+</div>
+<p class="pull">I’m looking for an internship or part-time role where I can take initiative on real business problems and keep growing.</p>
+</section>
+
+<section class="s rose" id="contact">
+<div class="chead"><span>Say hello</span><span>Contact</span><span>06</span></div>
+<p class="h2" style="margin-bottom:12px">Let’s talk.</p>
+<div class="txt"><p>Open to internships and part-time roles in business analysis and business information.</p>
+<p><span class="ph">Email</span> &nbsp;·&nbsp; <span class="ph">LinkedIn link</span></p></div>
+</section>
+</main>
+
+<footer class="w">Case studies come from university coursework. Business scenarios are fictional unless stated.</footer>
+
+<script>
+document.querySelectorAll('.gal').forEach(function(g){
+var big=g.querySelector('.main img');if(!big)return;
+g.querySelectorAll('.thumbs .slot').forEach(function(t){t.addEventListener('click',function(){
+var im=t.querySelector('img');if(!im||im.style.display==='none')return;
+big.src=im.src;big.style.display='';});});});
+(function(){var e=document.getElementById('certs');if(!e)return;var b=document.getElementById('cbar');
+function u(){b.style.width=Math.min(100,e.clientWidth/e.scrollWidth*100)+'%';b.style.marginLeft=(e.scrollLeft/e.scrollWidth*100)+'%'}
+document.getElementById('cprev').onclick=function(){e.scrollBy({left:-e.clientWidth*.8,behavior:'smooth'})};
+document.getElementById('cnext').onclick=function(){e.scrollBy({left:e.clientWidth*.8,behavior:'smooth'})};
+e.addEventListener('scroll',u);window.addEventListener('resize',u);u();})();
+</script>
+</body>
+</html>
