@@ -99,9 +99,9 @@ footer{padding:30px 0 50px;color:var(--ink);font-size:.82rem}
 .btn{white-space:nowrap}
 .name .ph,.logo .ph{background:none;color:inherit;padding:0}
 #contact a{color:#fff;font-weight:600;text-decoration:underline;text-underline-offset:4px}
-.vol .main{aspect-ratio:4/5}
-.vol .thumbs .slot{aspect-ratio:4/5}
-.vol .gal{max-width:440px;width:100%;justify-self:end}
+  
+.vol .gal{max-width:460px;width:100%;justify-self:end}
+.vol .thumbs .slot{flex:0 0 auto;height:92px;aspect-ratio:4/3}
 @media (max-width:860px){.vol .gal{justify-self:start}}
 </style>
 </head>
@@ -353,6 +353,15 @@ function u(){b.style.width=Math.min(100,e.clientWidth/e.scrollWidth*100)+'%';b.s
 document.getElementById('cprev').onclick=function(){e.scrollBy({left:-e.clientWidth*.8,behavior:'smooth'})};
 document.getElementById('cnext').onclick=function(){e.scrollBy({left:e.clientWidth*.8,behavior:'smooth'})};
 e.addEventListener('scroll',u);window.addEventListener('resize',u);u();})();
+
+(function(){var g=document.querySelector('.vol .gal');if(!g)return;
+var main=g.querySelector('.main');
+function fit(el,i){if(i&&i.naturalWidth){el.style.aspectRatio=Math.min(Math.max(i.naturalWidth/i.naturalHeight,0.75),1.6)}}
+g.querySelectorAll('.thumbs .slot').forEach(function(s){var i=s.querySelector('img');
+function f(){fit(s,i)}if(i.complete)f();i.addEventListener('load',f);
+s.addEventListener('click',function(){if(i.style.display!=='none')fit(main,i)})});
+var f0=g.querySelector('.thumbs .slot img');
+if(f0){var first=function(){fit(main,f0)};if(f0.complete)first();f0.addEventListener('load',first)}})();
 </script>
 </body>
 </html>
